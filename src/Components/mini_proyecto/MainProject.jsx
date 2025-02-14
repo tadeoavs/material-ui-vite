@@ -11,7 +11,7 @@ export default function MainProject() {
     const [valor, setValor] = useState("")
 
     const pregunta = () => {
-        setValor(decision)
+        setValor(decision.toLowerCase())
     }
 
 

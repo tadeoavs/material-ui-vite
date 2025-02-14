@@ -1,6 +1,5 @@
 import * as React from 'react';
-import Button from '@mui/material/Button'
-import { Divider, TextField } from '@mui/material';
+import { Divider, Box } from '@mui/material';
 import { AlumnoPromedio } from './Components/AlumnoPromedio';
 import ComponenteEncabezado from './Components/ComponenteEncabezado';
 import ListaProductos from './Components/alumnos_promedio/ListaProductos';
@@ -25,7 +24,11 @@ export default function App() {
 
     <Divider sx={{ marginTop: 10 }}/>
 
-    <MainProject/>
+    <Box sx={{ marginLeft: 10, marginBottom: 10, marginRight: 10}}>
+      <MainProject/>
+    </Box>
+
+    <Divider sx={{ marginBottom: 25 }}/>
 
     </>
 

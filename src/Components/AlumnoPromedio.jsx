@@ -20,6 +20,7 @@ export const AlumnoPromedio = () => {
     } else {
         return (
                 <ContenedorReprobado/>
+                
         )
     }
 }
