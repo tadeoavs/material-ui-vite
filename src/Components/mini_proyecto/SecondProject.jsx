@@ -28,7 +28,7 @@ export default function SecondProject(props) {
             <div>
                 <h3>Productos: </h3>
 
-                {props.valor === "libros" && (
+                {props.valor === "libros" ? (
                     <TableContainer component={Paper}>
                         <Table sx={{ minWidth: 650 }} aria-label="simple table">
                             <TableHead>
@@ -60,9 +60,9 @@ export default function SecondProject(props) {
                             </TableBody>
                         </Table>
                     </TableContainer>
-                )}
+                ) : ""}
 
-                {props.valor === "bicicletas" && (
+                {props.valor === "bicicletas" ? (
                     <TableContainer component={Paper}>
                         <Table sx={{ minWidth: 650 }} aria-label="simple table">
                             <TableHead>
@@ -90,11 +90,11 @@ export default function SecondProject(props) {
                             </TableBody>
                         </Table>
                     </TableContainer>
-                )}
+                ) : ""}
 
-                {props.valor !== "libros" && props.valor !== "bicicletas" && (
+                {props.valor !== "libros" && props.valor !== "bicicletas" ? (
                     "El producto no está disponible"
-                )}
+                ) : ""}
 
             </div>
 

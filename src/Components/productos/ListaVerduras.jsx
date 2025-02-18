@@ -5,6 +5,7 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
+import ListaProductoDialogo from './ListaProductoDialogo';
 
 
 export default function ListaVerduras() {
@@ -14,6 +15,55 @@ export default function ListaVerduras() {
     const handleChange = (event) => {
         setAge(event.target.value);
     };
+
+    const data = {
+    "store": {
+            "book": [
+                {
+                    "category": "reference",
+                    "author": "Nigel Rees",
+                    "title": "Sayings of the Century",
+                    "price": 8.95,
+                    "inStock": true,
+                    "sold": true
+                },
+                {
+                    "category": "fiction",
+                    "author": "Evelyn Waugh",
+                    "title": "Sword of Honour",
+                    "price": 12.99,
+                    "inStock": false,
+                    "sold": true
+                },
+                {
+                    "category": "fiction",
+                    "author": "Herman Melville",
+                    "title": "Moby Dick",
+                    "isbn": "0-553-21311-3",
+                    "price": 8.99,
+                    "inStock": true,
+                    "sold": false
+                },
+                {
+                    "category": "fiction",
+                    "author": "J. R. R. Tolkien",
+                    "title": "The Lord of the Rings",
+                    "isbn": "0-395-19395-8",
+                    "price": 22.99,
+                    "inStock": false,
+                    "sold": false
+                }
+            ],
+            "bicycle": 
+                {
+                    "color": "red",
+                    "price": 19.95,
+                    "inStock": true,
+                    "sold": false
+                }
+            
+        }
+    }
 
     const verduras = [
         { id: 1, nombre: "Lechuga", descripcion: "Verdura romanita", precio: 10, cantidad: 12 },
@@ -88,6 +138,11 @@ export default function ListaVerduras() {
                     </div>
                 </>
             )}
+
+            <Divider/>
+            <ListaProductoDialogo
+            data={data.store}
+            />
         </div>
     )
 }

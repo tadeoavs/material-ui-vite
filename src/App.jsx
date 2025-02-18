@@ -1,11 +1,11 @@
 import * as React from 'react';
 import { Divider, Box } from '@mui/material';
-import { AlumnoPromedio } from './Components/AlumnoPromedio';
+import { AlumnoPromedio} from './Components/AlumnoPromedio';
 import ComponenteEncabezado from './Components/ComponenteEncabezado';
-import ListaProductos from './Components/alumnos_promedio/ListaProductos';
+import ListaProductos from './Components/ListaProductos';
 import ListaVerduras from './Components/productos/ListaVerduras';
 import MainProject from './Components/mini_proyecto/MainProject';
-import SecondProject from './Components/mini_proyecto/SecondProject';
+
 
 
 export default function App() {
