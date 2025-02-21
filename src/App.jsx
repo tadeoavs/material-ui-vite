@@ -5,6 +5,7 @@ import ComponenteEncabezado from './Components/ComponenteEncabezado';
 import ListaProductos from './Components/ListaProductos';
 import ListaVerduras from './Components/productos/ListaVerduras';
 import MainProject from './Components/mini_proyecto/MainProject';
+import HomePage from './Pages/HomePage';
 
 
 
@@ -12,7 +13,10 @@ export default function App() {
 
   return (
     <>
+    
     <ComponenteEncabezado/>
+
+    {/*
 
     <h1>Hola mundo</h1>
 
@@ -28,7 +32,11 @@ export default function App() {
       <MainProject/>
     </Box>
 
-    <Divider sx={{ marginBottom: 25 }}/>
+    <Divider sx={{ marginBottom: 25 }}/> 
+    
+    */}
+    
+    <HomePage/>
 
     </>
 
