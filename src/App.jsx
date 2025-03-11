@@ -6,6 +6,7 @@ import ListaProductos from './Components/ListaProductos';
 import ListaVerduras from './Components/productos/ListaVerduras';
 import MainProject from './Components/mini_proyecto/MainProject';
 import HomePage from './Pages/HomePage';
+import AppRoutes from './MyPage/AppRoutes';
 
 
 
@@ -36,7 +37,7 @@ export default function App() {
     
     */}
     
-    <HomePage/>
+    <AppRoutes/>
 
     </>
 
