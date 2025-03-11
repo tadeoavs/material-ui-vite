@@ -41,7 +41,7 @@ export default function Home() {
                         Buscar Comida por id
                     </Typography>
                 </Button>
-                <img src="/src/MyPage/home/images/WikiFood.png" style={{ width: '50%', maxWidth: '300px', margin: '20px 0' }} alt="WikiFood" /> <br />
+                <img src="/src/MyPage/home/images/WikiFood.png" style={{ width: '100%', maxWidth: 400, margin: '20px 0' }} alt="WikiFood" /> <br />
             </div>
         </div>
     );

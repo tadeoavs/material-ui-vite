@@ -9,12 +9,14 @@ import NotFound from "./NotFound";
 import DashPage from "./dash/DashPage";
 import DashDetails from "./dash/DashDetails"
 import TradingPage from "./dash/TradingPage";
+import RecetaDetalles from "../Pages/RecetaDetalles";
 
 export default function AppRoutes() {
     return (
         <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/recetas" element={<HomePage/>}/>
+            <Route path="/recetas/:id" element={<RecetaDetalles />} />
             <Route path="/about" element={<About/>}/>
             <Route path="/contact" element={<Contact/>}/>
 
